@@ -4,7 +4,7 @@
   i18n_domain="groupserver">
     
   <browser:page 
-    for="Products.XWFChat.interfaces.IGSGroup"
+    for="Products.XWFChat.interfaces.IGSGroupFolder"
     name="editproperties.html"
     class="gs.group.properties.edit.EditPropertiesForm"
     permission="zope2.ManageProperties" />
