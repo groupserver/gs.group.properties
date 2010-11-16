@@ -32,6 +32,8 @@ setup(name='gs.group.properties',
     zip_safe=True,
     install_requires=[
         'setuptools',
+        'gs.group.base',
+        'gs.content.form',
         # -*- Extra requirements: -*-
     ],
     entry_points="""
