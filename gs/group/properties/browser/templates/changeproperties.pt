@@ -31,7 +31,18 @@
         
         <h1 tal:content="view/label">Change Group Properties</h1>
         <p>
-          Here you can change the properties of your group.
+          Here you can state the name and description of your group,
+          set a shortened version of the name to appear in the subject
+          line of all group emails, and (in private and secret groups) 
+          define the criteria for joining.
+        </p>
+        <p>
+          These group properties are displayed in places such as the group 
+          <a href="#"
+            tal:attributes="href view/groupInfo/relativeURL">home page</a> 
+          and the <span tal:replace="view/siteInfo/name"/> 
+          <a href="#"
+            tal:attributes="href string:${view/siteInfo/url}/groups">Groups page</a>.
         </p>
         <tal:block define="widgets view/widgets">
           <tal:block replace="structure provider:groupserver.FormWidgets"/>
