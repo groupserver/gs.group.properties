@@ -5,8 +5,8 @@
     
   <browser:page 
     for="Products.XWFChat.interfaces.IGSGroupFolder"
-    name="editproperties.html"
-    class="gs.group.properties.edit.EditPropertiesForm"
+    name="changeproperties.html"
+    class="gs.group.properties.change.ChangePropertiesForm"
     permission="zope2.ManageProperties" />
     
 </configure>
