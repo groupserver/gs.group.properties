@@ -13,7 +13,7 @@ class IGroupProperties(Interface):
         description=u'Shown in the subject line of all group '\
           u'emails',
         required=True)
-    mshipCriterion = TextLine(title=u'Membership Criteria (displayed '\
+    mshipCriterion = TextLine(title=u'Membership Criterion (displayed '\
           u'only when the group\'s privacy setting is "private" or '\
           u'"secret")',
         description=u'Who is eligible to join the group',
