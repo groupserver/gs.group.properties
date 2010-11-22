@@ -2,15 +2,11 @@
 from zope.formlib import form
 from zope.app.form.browser import TextWidget
 from Products.Five.browser.pagetemplatefile import ZopeTwoPageTemplateFile
+from gs.content.form.disabledtextwidget import disabled_text_widget
 from gs.content.form.utils import enforce_schema
 from gs.group.privacy.visibility import GroupVisibility
 from gs.group.base.form import GroupForm
 from interfaces import IGroupProperties
-
-def disabled_textwidget(field, request):
-    retval = TextWidget(field, request)
-    retval.cssClass = "disabled"
-    return retval
 
 class ChangePropertiesForm(GroupForm):
     pageTemplateFileName = 'browser/templates/changeproperties.pt'
@@ -30,7 +26,7 @@ class ChangePropertiesForm(GroupForm):
               form.Fields(IGroupProperties, render_context=True)
             if self.groupVisibility.isPublic:
                 form_fields['mshipCriterion'].custom_widget = \
-                  disabled_textwidget
+                  disabled_text_widget
             self.__form_fields = form_fields
         return self.__form_fields
     

@@ -70,6 +70,9 @@
       <script type="text/javascript">
         jQuery.noConflict()
         jQuery(document).ready( function () {
+            GSPopupFormHelp.init('#edit-group-properties');
+        });
+        jQuery(document).ready( function () {
             jQuery(".disabled").attr("disabled","disabled");
         });
       </script>
