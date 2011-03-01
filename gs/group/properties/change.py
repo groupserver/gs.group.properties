@@ -41,6 +41,7 @@ class ChangePropertiesForm(GroupForm):
     @form.action(label=u'Change', failure='handle_change_action_failure')
     def handle_change(self, action, data):
         form.applyChanges(self.context, self.form_fields, data)
+        # TODO: https://projects.iopen.net/groupserver/ticket/640
         self.status = u'Changed the properties of '\
           u'<a href="%s">%s</a>.' %\
            (self.groupInfo.relative_url(), self.groupInfo.name)
