@@ -1,0 +1,8 @@
+<ul id="admin-properties-content-links">
+  <tal:block repeat="viewlet options/viewlets">
+    <tal:block content="structure viewlet/render">
+      Some links
+    </tal:block>
+  </tal:block>
+</ul>
+

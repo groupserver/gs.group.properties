@@ -1,6 +1,7 @@
 # coding=utf-8
 from zope.interface import Interface
 from zope.schema import TextLine
+from zope.viewlet.interfaces import IViewletManager
 
 class IGroupProperties(Interface):
     title = TextLine(title=u'Group Name',
@@ -21,3 +22,6 @@ class IGroupProperties(Interface):
           u'the future?',
         required=True)
     
+class IGroupAdminPropertiesLinks(IViewletManager):
+    '''A viewlet manager for the Properties tabs used by the group admin'''
+

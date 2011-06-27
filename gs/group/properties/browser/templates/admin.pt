@@ -1,0 +1,9 @@
+<li id="admin-properties-content">
+  <strong>Change</strong> 
+  <span class="group" tal:content="view/groupInfo/name">this group</span>.
+  <tal:block 
+    content="structure provider:groupserver.GroupAdminPropertiesLinks">
+    Stuff
+  </tal:block>
+</li><!--admin-properties-content-->
+

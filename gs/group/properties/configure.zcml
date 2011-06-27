@@ -9,4 +9,25 @@
     class="gs.group.properties.change.ChangePropertiesForm"
     permission="zope2.ManageProperties" />
     
+  <browser:viewlet name="gs-group-home-admin-change"
+    manager="gs.group.home.interfaces.IGroupHomepageAdminLinks"
+    template="browser/templates/admin.pt"
+    class="gs.group.member.base.viewlet.GroupAdminViewlet"
+    permission="zope2.ManageProperties"
+    weight="5" />
+  <interface interface=".interfaces.IGroupAdminPropertiesLinks" />
+  <browser:viewletManager
+    name="groupserver.GroupAdminPropertiesLinks"
+    permission="zope2.View"
+    provides=".interfaces.IGroupAdminPropertiesLinks"
+    class="gs.viewlet.manager.WeightOrderedViewletManager"
+    template="browser/templates/adminlinks.pt"/>
+
+  <browser:viewlet name="gs-group-home-admin-change-properties-change"
+    manager="gs.group.properties.interfaces.IGroupAdminPropertiesLinks"
+    template="browser/templates/changepropertieslink.pt"
+    class="gs.group.member.base.viewlet.GroupAdminViewlet"
+    permission="zope2.ManageProperties"
+    weight="2" />
+
 </configure>
