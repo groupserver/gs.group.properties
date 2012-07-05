@@ -1,7 +1,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
   xmlns:tal="http://xml.zope.org/namespaces/tal"
   xmlns:metal="http://xml.zope.org/namespaces/metal"
-  metal:use-macro="context/@@groupserver_layout/page">
+  metal:use-macro="context/@@groupserver_site_home_layout/page">
   <head>
     <title metal:fill-slot="title">
       <span tal:replace="string:${view/label}: ${view/siteInfo/get_name}">
@@ -18,19 +18,22 @@
         tal:attributes="action request/URL" id="edit-group-properties">
         
         <h1 tal:content="view/label">Change Group Properties</h1>
-        <p>
-          Here you can state the name and description of your group,
+        <p class="intro">
+          Here you can state the name and description of 
+          <a tal:attributes="href view/groupInfo/relativeURL;"
+             tal:content="view/groupInfo/name"
+             class="group" href="#">this group</a>,
           set a shortened version of the name to appear in the subject
           line of all group emails, and (in private and secret groups) 
           define the criteria for joining.
         </p>
         <p>
-          These group properties are displayed in places such as the group 
+          These group properties are displayed in places such as
           <a href="#"
-            tal:attributes="href view/groupInfo/relativeURL">home page</a> 
-          and the <span tal:replace="view/siteInfo/name"/> 
-          <a href="#"
-            tal:attributes="href string:${view/siteInfo/url}/groups">Groups page</a>.
+            tal:attributes="href view/groupInfo/relativeURL">the group page</a> 
+          and 
+          <a href="/">the the <span tal:replace="view/siteInfo/name"/> 
+          homepage.</a>
         </p>
         <tal:block define="widgets view/widgets">
           <tal:block replace="structure provider:groupserver.FormWidgets"/>
