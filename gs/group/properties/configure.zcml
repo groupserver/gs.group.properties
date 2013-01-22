@@ -9,12 +9,13 @@
     class="gs.group.properties.change.ChangePropertiesForm"
     permission="zope2.ManageProperties" />
     
-  <browser:viewlet name="gs-group-home-admin-change"
-    manager="gs.group.home.interfaces.IGroupHomepageAdminLinks"
+  <browser:viewlet 
+    name="gs-group-properties-admin"
+    manager="gs.group.home.interfaces.IGroupHomepageAdmin"
     template="browser/templates/admin.pt"
-    class="gs.group.member.base.viewlet.GroupAdminViewlet"
+    class="gs.group.member.base.viewlet.SiteAdminViewlet"
     permission="zope2.ManageProperties"
-    weight="5" />
+    weight="20" />
   <interface interface=".interfaces.IGroupAdminPropertiesLinks" />
   <browser:viewletManager
     name="groupserver.GroupAdminPropertiesLinks"
