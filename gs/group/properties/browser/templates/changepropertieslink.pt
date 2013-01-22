@@ -1,3 +1,5 @@
-<li><a tal:attributes="href string:${view/groupInfo/relativeURL}/changeproperties.html"
-  href="changeproperties.html">Change the general group 
-    <strong>properties</strong></a></li>
+<li id="gs-group-properties-admin-link">
+  <a tal:attributes="href string:${view/groupInfo/relativeURL}/changeproperties.html"
+     href="changeproperties.html">Change the general 
+    <strong>properties</strong></a>
+</li>
