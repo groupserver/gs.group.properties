@@ -1,4 +1,4 @@
-<ul id="admin-properties-content-links">
+<ul id="gs-group-properties-admin-links">
   <tal:block repeat="viewlet options/viewlets">
     <tal:block content="structure viewlet/render">
       Some links
