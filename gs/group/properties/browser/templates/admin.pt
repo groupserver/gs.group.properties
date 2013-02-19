@@ -1,5 +1,6 @@
-<div id="gs-group-properties-admin">
-  <h4>This Group</h4>
+<div id="gs-group-properties-admin" role="navigation"
+     aria-labelledby="gs-group-properties-admin-h">
+  <h4 id="gs-group-properties-admin-h">This Group</h4>
   <p tal:replace="structure provider:groupserver.GroupAdminPropertiesLinks">
     Stuff
   </p>
