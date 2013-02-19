@@ -1,7 +1,5 @@
 <div id="gs-group-properties-admin">
-  <p class="label">
-    This Group
-  </p>
+  <h4>This Group</h4>
   <p tal:replace="structure provider:groupserver.GroupAdminPropertiesLinks">
     Stuff
   </p>
