@@ -1,4 +1,4 @@
-# coding=utf-8
+# -*- coding: utf-8 -*-
 import os
 from setuptools import setup, find_packages
 from version import get_version
@@ -32,12 +32,20 @@ setup(name='gs.group.properties',
     zip_safe=True,
     install_requires=[
         'setuptools',
+        'zope.cachedescriptors',
+        'zope.formlib',
+        'zope.interface',
+        'zope.schema',
+        'zope.viewlet',
+        'Zope2',
         'gs.content.form',
         'gs.group.base',
+        'gs.group.home',
+        'gs.group.member.viewlet',
         'gs.group.privacy',
-        # -*- Extra requirements: -*-
+        'gs.viewlet',
+
     ],
     entry_points="""
     # -*- Entry points: -*-
     """,)
-
