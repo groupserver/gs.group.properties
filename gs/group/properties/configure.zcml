@@ -13,7 +13,7 @@
     name="gs-group-properties-admin"
     manager="gs.group.home.interfaces.IGroupHomepageAdmin"
     template="browser/templates/admin.pt"
-    class="gs.group.member.base.viewlet.SiteAdminViewlet"
+    class="gs.group.member.viewlet.SiteAdminViewlet"
     permission="zope2.ManageProperties"
     weight="20" />
   <interface interface=".interfaces.IGroupAdminPropertiesLinks" />
@@ -27,7 +27,7 @@
   <browser:viewlet name="gs-group-home-admin-change-properties-change"
     manager="gs.group.properties.interfaces.IGroupAdminPropertiesLinks"
     template="browser/templates/changepropertieslink.pt"
-    class="gs.group.member.base.viewlet.GroupAdminViewlet"
+    class="gs.group.member.viewlet.GroupAdminViewlet"
     permission="zope2.ManageProperties"
     weight="2" />
 
