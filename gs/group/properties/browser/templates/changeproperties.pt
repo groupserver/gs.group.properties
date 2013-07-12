@@ -1,7 +1,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
   xmlns:tal="http://xml.zope.org/namespaces/tal"
   xmlns:metal="http://xml.zope.org/namespaces/metal"
-  metal:use-macro="context/@@groupserver_site_home_layout/page">
+  metal:use-macro="context/@@groupserver_layout/page">
   <head>
     <title metal:fill-slot="title">
       <span tal:replace="string:${view/label}: ${view/siteInfo/get_name}">
@@ -13,61 +13,50 @@
     <tal:block content="structure provider:groupserver.FormStatusMessage"
       define="errors view/errors; status view/status; widgets view/widgets"
       metal:fill-slot="messages">&#160;</tal:block>
-    <tal:block metal:fill-slot="body">
-      <form enctype="multipart/form-data"  method="post" action="."
-        tal:attributes="action request/URL" id="edit-group-properties">
-        
-        <h1 tal:content="view/label">Change Group Properties</h1>
-        <p class="intro">
-          Here you can state the name and description of 
-          <a tal:attributes="href view/groupInfo/relativeURL;"
-             tal:content="view/groupInfo/name"
-             class="group" href="#">this group</a>,
-          set a shortened version of the name to appear in the subject
-          line of all group emails, and (in private and secret groups) 
-          define the criteria for joining.
-        </p>
-        <p>
-          These group properties are displayed in places such as
-          <a href="#"
-            tal:attributes="href view/groupInfo/relativeURL">the group page</a> 
-          and 
-          <a href="/">the the <span tal:replace="view/siteInfo/name"/> 
-          homepage.</a>
-        </p>
-        <tal:block define="widgets view/widgets">
-          <tal:block replace="structure provider:groupserver.FormWidgets"/>
+     <ul metal:fill-slot="breadcrumb">
+      <li class="site">
+        <a tal:attributes="title string:${view/siteInfo/name} Homepage"
+           href="/" title="Home" class="icon-alone">
+          <span aria-hidden="true" data-icon="&#x2302;"></span>
+          <span class="screen-reader-text"
+                tal:content="string:${view/siteInfo/name} Homepage">Home</span></a>
+      </li>
+      <li>
+        <a class="group" 
+           tal:attributes="href string:${view/groupInfo/relativeURL}/">
+          <strong
+            tal:content="view/groupInfo/name">This group</strong></a>
+      </li>
+      <li tal:content="view/label">Stuff</li>
+    </ul>
+    <form metal:fill-slot="body" enctype="multipart/form-data"  method="post" 
+          action="." tal:attributes="action request/URL" 
+          class="gs-content-js-required"
+          id="edit-group-properties">
+
+      <h1 tal:content="view/label">Change Group Properties</h1>
+      <p class="intro">
+        Here you can state the name and description of this group,
+        set a shortened version of the name to appear in the subject
+        line of all group emails, and (in private and secret groups) 
+        define the criteria for joining.
+        These group properties are displayed in places such as
+        <a href="#"
+           tal:attributes="href view/groupInfo/relativeURL">the group page</a> 
+        and 
+        <a href="/">the the <span tal:replace="view/siteInfo/name"/> 
+        homepage.</a>
+      </p>
+      <tal:block define="widgets view/widgets">
+        <tal:block replace="structure provider:groupserver.FormWidgets"/>
+      </tal:block>
+      <div class="buttons" tal:condition="view/availableActions">
+        <tal:block repeat="action view/actions">
+          <div class="formelementbutton">
+            <span tal:replace="structure action/render">Button</span>
+          </div>
         </tal:block>
-        <div class="buttons" tal:condition="view/availableActions">
-          <tal:block repeat="action view/actions">
-            <div class="formelementbutton">
-              <span tal:replace="structure action/render">Button</span>
-            </div>
-          </tal:block>
-        </div><!--buttons-->
-      </form>
-    </tal:block>
-    <tal:block metal:fill-slot="javascript">
-      <script type="text/javascript"
-        src="/++resource++check_required-20071214.js">&#160;</script>
-      <script type="text/javascript"
-        tal:define="widgets view/widgets; 
-          button string:#form\\.actions\\.change"
-        tal:content="provider:groupserver.RequiredWidgetsJavaScript">
-        alert("I have not been replaced.");
-      </script>
-      <script type="text/javascript"
-        src="/++resource++popup_help-20071218.js">&#160;</script>
-      <script type="text/javascript">
-        jQuery.noConflict()
-        jQuery(document).ready( function () {
-            GSPopupFormHelp.init('#edit-group-properties');
-        });
-        jQuery(document).ready( function () {
-            jQuery(".disabled").attr("disabled","disabled");
-        });
-      </script>
-    </tal:block>
+      </div><!--buttons-->
+    </form>
   </body>
 </html>
-
