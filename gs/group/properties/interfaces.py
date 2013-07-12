@@ -12,7 +12,7 @@ class IGroupProperties(Interface):
     description = TextLine(title=u'Short Description',
         description=u'Who and what the online group is for. '
             u'Shown on the Groups page and the Group Home Page.',
-        required=True)
+        required=False)
 
     short_name = TextLine(title=u'Subject Line Prefix',
         description=u'Shown in the subject line of posts '
@@ -24,7 +24,7 @@ class IGroupProperties(Interface):
               u'is "private" or "secret".',
         description=u'Who is eligible to join the group in '
               u'the future?',
-        required=True)
+        required=False)
 
 
 class IGroupAdminPropertiesLinks(IViewletManager):
