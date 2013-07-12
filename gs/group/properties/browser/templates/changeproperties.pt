@@ -4,10 +4,15 @@
   metal:use-macro="context/@@groupserver_layout/page">
   <head>
     <title metal:fill-slot="title">
-      <span tal:replace="string:${view/label}: ${view/siteInfo/get_name}">
-        Change Group Properties
+      <span tal:replace="string:${view/label}: ${view/groupInfo/name} ${view/siteInfo/name}">
+        Change group properties
       </span>
     </title>
+    <tal:block metal:fill-slot="metadata">
+      <link rel="up" href="#" 
+            tal:attributes="href view/groupInfo/relativeURL;
+                            title view/groupInfo/name"/>
+    </tal:block>
   </head>
   <body>
     <tal:block content="structure provider:groupserver.FormStatusMessage"
@@ -34,7 +39,7 @@
           class="gs-content-js-required"
           id="edit-group-properties">
 
-      <h1 tal:content="view/label">Change Group Properties</h1>
+      <h1 tal:content="view/label">Change group properties</h1>
       <p class="intro">
         Here you can state the name and description of this group,
         set a shortened version of the name to appear in the subject
