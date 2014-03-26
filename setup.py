@@ -1,4 +1,17 @@
 # -*- coding: utf-8 -*-
+##############################################################################
+#
+# Copyright © 2013, 2014 OnlineGroups.net and Contributors.
+# All Rights Reserved.
+#
+# This software is subject to the provisions of the Zope Public License,
+# Version 2.1 (ZPL).  A copy of the ZPL should accompany this distribution.
+# THIS SOFTWARE IS PROVIDED "AS IS" AND ANY AND ALL EXPRESS OR IMPLIED
+# WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF TITLE, MERCHANTABILITY, AGAINST INFRINGEMENT, AND FITNESS
+# FOR A PARTICULAR PURPOSE.
+#
+##############################################################################
 import os
 from setuptools import setup, find_packages
 from version import get_version
@@ -29,13 +42,16 @@ setup(name='gs.group.properties',
     packages=find_packages(exclude=['ez_setup']),
     namespace_packages=['gs', 'gs.group'],
     include_package_data=True,
-    zip_safe=True,
+    zip_safe=False,
     install_requires=[
         'setuptools',
+        'zope.browserpage',
         'zope.cachedescriptors',
         'zope.formlib',
         'zope.interface',
         'zope.schema',
+        'zope.tal',
+        'zope.tales',
         'zope.viewlet',
         'Zope2',
         'gs.content.form',
@@ -43,7 +59,7 @@ setup(name='gs.group.properties',
         'gs.group.base',
         'gs.group.home',
         'gs.group.member.viewlet',
-        'gs.group.privacy',
+        'gs.group.properties',
         'gs.viewlet',
 
     ],
