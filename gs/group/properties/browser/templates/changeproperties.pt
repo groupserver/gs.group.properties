@@ -9,7 +9,7 @@
       </span>
     </title>
     <tal:block metal:fill-slot="metadata">
-      <link rel="up" href="#" 
+      <link rel="up" href="#"
             tal:attributes="href view/groupInfo/relativeURL;
                             title view/groupInfo/name"/>
     </tal:block>
@@ -27,15 +27,15 @@
                 tal:content="string:${view/siteInfo/name} Homepage">Home</span></a>
       </li>
       <li>
-        <a class="group" 
+        <a class="group"
            tal:attributes="href string:${view/groupInfo/relativeURL}/">
           <strong
             tal:content="view/groupInfo/name">This group</strong></a>
       </li>
       <li tal:content="view/label">Stuff</li>
     </ul>
-    <form metal:fill-slot="body" enctype="multipart/form-data"  method="post" 
-          action="." tal:attributes="action request/URL" 
+    <form metal:fill-slot="body" enctype="multipart/form-data"  method="post"
+          action="." tal:attributes="action request/URL"
           class="gs-content-js-required"
           id="edit-group-properties">
 
@@ -43,13 +43,13 @@
       <p class="intro">
         Here you can state the name and description of this group,
         set a shortened version of the name to appear in the subject
-        line of all group emails, and (in private and secret groups) 
+        line of all group emails, and (in private and secret groups)
         define the criteria for joining.
         These group properties are displayed in places such as
         <a href="#"
-           tal:attributes="href view/groupInfo/relativeURL">the group page</a> 
-        and 
-        <a href="/">the the <span tal:replace="view/siteInfo/name"/> 
+           tal:attributes="href view/groupInfo/relativeURL">the group page</a>
+        and
+        <a href="/">the the <span tal:replace="view/siteInfo/name"/>
         homepage.</a>
       </p>
       <tal:block define="widgets view/widgets">
