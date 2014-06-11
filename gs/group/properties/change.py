@@ -16,8 +16,8 @@ from __future__ import absolute_import, unicode_literals
 from zope.cachedescriptors.property import Lazy
 from zope.formlib import form
 from Products.Five.browser.pagetemplatefile import ZopeTwoPageTemplateFile
-from gs.content.form import disabled_text_widget
-from gs.content.form.utils import enforce_schema
+from gs.content.form.base import disabled_text_widget
+from gs.content.form.base.utils import enforce_schema
 from gs.group.privacy import GroupVisibility
 from gs.group.base import GroupForm
 from .interfaces import IGroupProperties
