@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-##############################################################################
+############################################################################
 #
 # Copyright © 2013, 2014 OnlineGroups.net and Contributors.
 # All Rights Reserved.
@@ -11,7 +11,7 @@
 # WARRANTIES OF TITLE, MERCHANTABILITY, AGAINST INFRINGEMENT, AND FITNESS
 # FOR A PARTICULAR PURPOSE.
 #
-##############################################################################
+############################################################################
 from __future__ import absolute_import, unicode_literals
 from zope.cachedescriptors.property import Lazy
 from zope.formlib import form
@@ -31,7 +31,7 @@ class ChangePropertiesForm(GroupForm):
         GroupForm.__init__(self, context, request)
         enforce_schema(self.context, IGroupProperties)
         self.groupVisibility = GroupVisibility(self.groupInfo)
-        self.label = 'Change Group Properties'
+        self.label = 'Change group properties'
 
     @Lazy
     def form_fields(self):
@@ -52,9 +52,9 @@ class ChangePropertiesForm(GroupForm):
     def handle_change(self, action, data):
         form.applyChanges(self.context, self.form_fields, data)
         # TODO: https://projects.iopen.net/groupserver/ticket/640
-        self.status = 'Changed the properties of '\
-          '<a href="%s">%s</a>.' %\
-           (self.groupInfo.relative_url(), self.groupInfo.name)
+        s = 'Changed the properties of <a href="{0}">{1}</a>.'
+        self.status = s.format(self.groupInfo.relative_url(),
+                               self.groupInfo.name)
 
     def handle_change_action_failure(self, action, data, errors):
         if len(errors) == 1:
