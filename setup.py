@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 ############################################################################
 #
-# Copyright © 2013, 2014 OnlineGroups.net and Contributors.
+# Copyright © 2010, 2011, 2012, 2013, 2014 OnlineGroups.net and
+# Contributors.
+#
 # All Rights Reserved.
 #
 # This software is subject to the provisions of the Zope Public License,
@@ -46,7 +48,7 @@ setup(
     author_email='alice@onlinegroups.net',
     maintainer='Michael JasonSmith',
     maintainer_email='mpj17@onlinegroups.net',
-    url='https://source.iopen.net/groupserver/gs.group.properties/',
+    url='https://github.com/groupserver/gs.group.properties/',
     license='ZPL 2.1',
     packages=find_packages(exclude=['ez_setup']),
     namespace_packages=['gs', 'gs.group'],
