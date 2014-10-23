@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2014-10-23 21:34+0000\n"
+"POT-Creation-Date: 2014-10-23 22:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,11 +14,11 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
-#: ./change.py:52
+#: ./change.py:53
 msgid "Change"
 msgstr ""
 
-#: ./change.py:35
+#: ./change.py:36
 msgid "Change group properties"
 msgstr ""
 
@@ -59,8 +59,8 @@ msgstr ""
 msgid "change-intro"
 msgstr ""
 
-#. Default: "Changed the properties of <a href=\"${groupUrl}\">{groupName}</a>."
-#: ./change.py:57
+#. Default: "Changed the properties of <a href=\"${groupUrl}\">${groupName}</a>."
+#: ./change.py:58
 msgid "changed-status"
 msgstr ""
 
