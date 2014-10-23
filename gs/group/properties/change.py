@@ -21,6 +21,7 @@ from gs.content.form.base.utils import enforce_schema
 from gs.group.privacy import GroupVisibility
 from gs.group.base import GroupForm
 from .interfaces import IGroupProperties
+from . import GSMessageFactory as _
 
 
 class ChangePropertiesForm(GroupForm):
@@ -31,7 +32,7 @@ class ChangePropertiesForm(GroupForm):
         GroupForm.__init__(self, context, request)
         enforce_schema(self.context, IGroupProperties)
         self.groupVisibility = GroupVisibility(self.groupInfo)
-        self.label = 'Change group properties'
+        self.label = _('Change group properties')
 
     @Lazy
     def form_fields(self):
@@ -48,13 +49,16 @@ class ChangePropertiesForm(GroupForm):
         if self.groupVisibility.isPublic:
             self.widgets['mshipCriterion'].required = False
 
-    @form.action(label='Change', failure='handle_change_action_failure')
+    @form.action(label=_('Change'), failure='handle_change_action_failure')
     def handle_change(self, action, data):
         form.applyChanges(self.context, self.form_fields, data)
         # TODO: https://projects.iopen.net/groupserver/ticket/640
-        s = 'Changed the properties of <a href="{0}">{1}</a>.'
-        self.status = s.format(self.groupInfo.relative_url(),
-                               self.groupInfo.name)
+
+        self.status = _('changed-status',
+                        'Changed the properties of '
+                        '<a href="${groupUrl}">{groupName}</a>.',
+                        mapping={'groupUrl': self.groupInfo.relative_url(),
+                                 'groupName': self.groupInfo.name})
 
     def handle_change_action_failure(self, action, data, errors):
         if len(errors) == 1:

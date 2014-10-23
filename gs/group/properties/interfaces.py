@@ -12,36 +12,37 @@
 # FOR A PARTICULAR PURPOSE.
 #
 ############################################################################
-from __future__ import unicode_literals
+from __future__ import absolute_import, unicode_literals
 from zope.interface import Interface
 from zope.schema import TextLine
 from zope.viewlet.interfaces import IViewletManager
+from . import GSMessageFactory as _
 
 
 class IGroupProperties(Interface):
     title = TextLine(
-        title='Group Name',
-        description='The name of the group',
+        title=_('Group Name'),
+        description=_('The name of the group'),
         required=True)
 
     description = TextLine(
-        title='Short Description',
-        description='Who and what the online group is for. '
-                    'Shown on the Groups page and the Group Home Page.',
+        title=_('Short Description'),
+        description=_('Who and what the online group is for. Shown on the '
+                      'Groups page and the Group Home Page.'),
         required=False)
 
     short_name = TextLine(
-        title='Subject Line Prefix',
-        description='Shown in the subject line of posts delivered via '
-                    'email.',
+        title=_('Subject Line Prefix'),
+        description=_('Shown in the subject line of posts delivered via '
+                      'email.'),
         required=True)
 
     mshipCriterion = TextLine(
-        title='Membership Criterion ? '
-              'displayed only when the group\'s privacy setting '
-              'is "private" or "secret".',
-        description='Who is eligible to join the group in '
-              'the future?',
+        title=_('Membership Criterion ? '
+                'displayed only when the group\'s privacy setting '
+                'is "private" or "secret".'),
+        description=_('Who is eligible to join the group in '
+                      'the future?'),
         required=False)
 
 

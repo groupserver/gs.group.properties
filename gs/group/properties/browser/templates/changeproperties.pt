@@ -1,6 +1,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:tal="http://xml.zope.org/namespaces/tal"
       xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      i18n:domain="gs.group.properties"
       metal:use-macro="context/@@groupserver_layout/page">
   <head>
     <title metal:fill-slot="title">
@@ -40,7 +42,7 @@
           id="edit-group-properties">
 
       <h1 tal:content="view/label">Change group properties</h1>
-      <p class="intro">
+      <p class="intro" i18n:translate="change-intro">
         Here you can state the name and description of this group,
         set a shortened version of the name to appear in the subject
         line of all group emails, and (in private and secret groups)

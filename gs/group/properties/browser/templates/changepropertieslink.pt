@@ -1,5 +1,10 @@
-<li id="gs-group-properties-admin-link">
-  <a tal:attributes="href string:${view/groupInfo/relativeURL}/changeproperties.html"
+<li xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    xmlns:tal="http://xml.zope.org/namespaces/tal"
+    id="gs-group-properties-admin-link"
+    i18n:domain="gs.group.member.join">
+  <a i18n:translate="change-properties-link"
+    tal:attributes="href string:${view/groupInfo/relativeURL}/changeproperties.html"
      href="changeproperties.html">Change the general
     <strong>properties</strong></a>
 </li>

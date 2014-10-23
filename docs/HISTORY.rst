@@ -1,6 +1,12 @@
 Changelog
 =========
 
+2.4.0 (2014-10-23)
+------------------
+
+* Added i18n support
+* Fixed `Bug 640<https://redmine.iopen.net/issues/640>`_
+
 2.3.1 (2014-10-10)
 ------------------
 
