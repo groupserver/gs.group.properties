@@ -1,18 +1,22 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# The Change properties page for GroupServer
+# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: gs.group.properties\n"
 "POT-Creation-Date: 2014-10-23 22:21+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"PO-Revision-Date: 2015-02-18 19:51+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language-Team: German (http://www.transifex.com/projects/p/gs-group-properties/language/de/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Domain: gs.group.properties\n"
+"Language: de\n"
 "Language-Code: en\n"
 "Language-Name: English\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Domain: DOMAIN\n"
 
 #: ./change.py:53
 msgid "Change"
@@ -27,7 +31,9 @@ msgid "Group Name"
 msgstr ""
 
 #: ./interfaces.py:41
-msgid "Membership Criterion ? displayed only when the group's privacy setting is \"private\" or \"secret\"."
+msgid ""
+"Membership Criterion ? displayed only when the group's privacy setting is "
+"\"private\" or \"secret\"."
 msgstr ""
 
 #: ./interfaces.py:29
@@ -47,20 +53,27 @@ msgid "The name of the group"
 msgstr ""
 
 #: ./interfaces.py:30
-msgid "Who and what the online group is for. Shown on the Groups page and the Group Home Page."
+msgid ""
+"Who and what the online group is for. Shown on the Groups page and the Group"
+" Home Page."
 msgstr ""
 
 #: ./interfaces.py:44
 msgid "Who is eligible to join the group in the future?"
 msgstr ""
 
-#. Default: "Here you can state the name and description of this group, set a shortened version of the name to appear in the subject line of all group emails, and (in private and secret groups) define the criteria for joining. These group properties are displayed in places such as <a href=\"${DYNAMIC_CONTENT}\">the group page</a> and <a href=\"/\">the the ${DYNAMIC_CONTENT} homepage.</a>"
+#. Default: "Here you can state the name and description of this group, set a
+#. shortened version of the name to appear in the subject line of all group
+#. emails, and (in private and secret groups) define the criteria for joining.
+#. These group properties are displayed in places such as <a
+#. href=\"${DYNAMIC_CONTENT}\">the group page</a> and <a href=\"/\">the the
+#. ${DYNAMIC_CONTENT} homepage.</a>"
 #: ./browser/templates/changeproperties.pt:54
 msgid "change-intro"
 msgstr ""
 
-#. Default: "Changed the properties of <a href=\"${groupUrl}\">${groupName}</a>."
+#. Default: "Changed the properties of <a
+#. href=\"${groupUrl}\">${groupName}</a>."
 #: ./change.py:58
 msgid "changed-status"
 msgstr ""
-
