@@ -33,7 +33,8 @@ class ChangePropertiesForm(GroupForm):
         GroupForm.__init__(self, context, request)
         enforce_schema(self.context, IGroupProperties)
         self.groupVisibility = GroupVisibility(self.groupInfo)
-        self.label = _('Change group properties')
+        self.label = _('change-properties-page-title',
+                       'Change group properties')
 
     @Lazy
     def form_fields(self):
@@ -50,22 +51,24 @@ class ChangePropertiesForm(GroupForm):
         if self.groupVisibility.isPublic:
             self.widgets['mshipCriterion'].required = False
 
-    @form.action(label=_('Change'), failure='handle_change_action_failure')
+    @form.action(name='change', label=_('change-button', 'Change'),
+                 failure='handle_change_action_failure')
     def handle_change(self, action, data):
         form.applyChanges(self.context, self.form_fields, data)
         self.set_subject_prefix(data['short_name'])
-
+        groupLink = '<a href="{groupUrl}">{groupName}</a>.'.format(
+            groupUrl=self.groupInfo.relative_url(),
+            groupName=self.groupInfo.name)
         self.status = _('changed-status',
-                        'Changed the properties of '
-                        '<a href="${groupUrl}">${groupName}</a>.',
-                        mapping={'groupUrl': self.groupInfo.relative_url(),
-                                 'groupName': self.groupInfo.name})
+                        'Changed the properties of ${groupLink}.',
+                        mapping={'groupLink': groupLink})
 
     def handle_change_action_failure(self, action, data, errors):
         if len(errors) == 1:
-            self.status = '<p>There is an error:</p>'
+            s = 'There is an error:'
         else:
-            self.status = '<p>There are errors:</p>'
+            s = 'There are errors:'
+        self.status = '<p>{0}</p>'.format(s)
 
     def set_subject_prefix(self, prefix):
         '''Set the subject-line prefix by setting the title of the

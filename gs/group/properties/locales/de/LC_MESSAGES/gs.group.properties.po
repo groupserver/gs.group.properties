@@ -1,79 +1,95 @@
-# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
-# The Change properties page for GroupServer
+# 
 # Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: gs.group.properties\n"
-"POT-Creation-Date: 2014-10-23 22:21+0000\n"
-"PO-Revision-Date: 2015-02-18 19:51+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-02-20 00:26+0000\n"
+"PO-Revision-Date: 2015-02-20 00:30+0000\n"
+"Last-Translator: Michael JasonSmith <mpj17@onlinegroups.net>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/gs-group-properties/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Domain: gs.group.properties\n"
+"Domain: DOMAIN\n"
 "Language: de\n"
 "Language-Code: en\n"
 "Language-Name: English\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Preferred-Encodings: utf-8 latin1\n"
 
-#: ./change.py:53
-msgid "Change"
-msgstr ""
-
-#: ./change.py:36
-msgid "Change group properties"
-msgstr ""
-
-#: ./interfaces.py:24
-msgid "Group Name"
-msgstr ""
-
-#: ./interfaces.py:41
-msgid ""
-"Membership Criterion ? displayed only when the group's privacy setting is "
-"\"private\" or \"secret\"."
-msgstr ""
-
-#: ./interfaces.py:29
-msgid "Short Description"
-msgstr ""
-
-#: ./interfaces.py:36
-msgid "Shown in the subject line of posts delivered via email."
-msgstr ""
-
-#: ./interfaces.py:35
-msgid "Subject Line Prefix"
-msgstr ""
-
-#: ./interfaces.py:25
-msgid "The name of the group"
-msgstr ""
-
-#: ./interfaces.py:30
-msgid ""
-"Who and what the online group is for. Shown on the Groups page and the Group"
-" Home Page."
-msgstr ""
-
-#: ./interfaces.py:44
-msgid "Who is eligible to join the group in the future?"
+#. Default: "Change"
+#: ./change.py:54
+msgid "change-button"
 msgstr ""
 
 #. Default: "Here you can state the name and description of this group, set a
 #. shortened version of the name to appear in the subject line of all group
 #. emails, and (in private and secret groups) define the criteria for joining.
 #. These group properties are displayed in places such as <a
-#. href=\"${DYNAMIC_CONTENT}\">the group page</a> and <a href=\"/\">the the
-#. ${DYNAMIC_CONTENT} homepage.</a>"
-#: ./browser/templates/changeproperties.pt:54
+#. href=\"${DYNAMIC_CONTENT}\">the group page</a> and <a href=\"/\">the
+#. ${siteName} homepage.</a>"
+#: ./browser/templates/changeproperties.pt:57
 msgid "change-intro"
 msgstr ""
 
-#. Default: "Changed the properties of <a
-#. href=\"${groupUrl}\">${groupName}</a>."
-#: ./change.py:58
+#. Default: "Change group properties"
+#: ./change.py:36
+msgid "change-properties-page-title"
+msgstr ""
+
+#. Default: "Changed the properties of ${groupLink}."
+#: ./change.py:62
 msgid "changed-status"
+msgstr ""
+
+#. Default: "Short Description"
+#: ./interfaces.py:30
+msgid "form-label-description"
+msgstr ""
+
+#. Default: "Who and what the online group is for. Shown on the Groups page
+#. and the Group Home Page."
+#: ./interfaces.py:31
+msgid "form-label-description-help"
+msgstr ""
+
+#. Default: "Group Name"
+#: ./interfaces.py:24
+msgid "form-label-group-name"
+msgstr ""
+
+#. Default: "The name of the group"
+#: ./interfaces.py:25
+msgid "form-label-group-name-help"
+msgstr ""
+
+#. Default: "Membership Criterion"
+#: ./interfaces.py:44
+msgid "form-label-membership-criterion"
+msgstr ""
+
+#. Default: "Who is eligible to join the group in the future. Displayed only
+#. when the group's privacy setting is \"private\" or \"secret\"."
+#: ./interfaces.py:45
+msgid "form-label-membership-criterion-help"
+msgstr ""
+
+#. Default: "Subject Line Prefix"
+#: ./interfaces.py:37
+msgid "form-label-subject-line-prefix"
+msgstr ""
+
+#. Default: "Shown in the subject line of posts delivered via email."
+#: ./interfaces.py:38
+msgid "form-label-subject-line-prefix-help"
+msgstr ""
+
+#. Default: "This Group"
+#: ./browser/templates/admin.pt:5
+msgid "group-admin-heading"
+msgstr ""
+
+#. Default: "${siteName} Homepage"
+#: ./browser/templates/changeproperties.pt:29
+msgid "site-home"
 msgstr ""

@@ -1,0 +1,8 @@
+[main]
+host = https://www.transifex.com
+
+[gs-group-properties.gs-group-properties-pot]
+file_filter = gs/group/properties/locales/<lang>/LC_MESSAGES/gs.group.properties.po
+source_lang = en
+type = PO
+

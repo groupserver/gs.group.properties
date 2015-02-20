@@ -1,7 +1,10 @@
-<div id="gs-group-properties-admin" role="navigation"
+<div xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+     i18n:domain="gs.group.properties"
+     id="gs-group-properties-admin" role="navigation"
      aria-labelledby="gs-group-properties-admin-h">
-  <h4 id="gs-group-properties-admin-h">This Group</h4>
+  <h4 id="gs-group-properties-admin-h"
+      i18n:translate="group-admin-heading">This Group</h4>
   <p tal:replace="structure provider:groupserver.GroupAdminPropertiesLinks">
-    Stuff
+    Replaced by the GroupAdminPropertiesLinks viewlet manager.
   </p>
 </div><!--gs-group-properties-admin-->

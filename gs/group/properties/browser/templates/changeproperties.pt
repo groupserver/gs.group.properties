@@ -25,8 +25,10 @@
         <a tal:attributes="title string:${view/siteInfo/name} Homepage"
            href="/" title="Home" class="icon-alone">
           <span aria-hidden="true" data-icon="&#x2302;"></span>
-          <span class="screen-reader-text"
-                tal:content="string:${view/siteInfo/name} Homepage">Home</span></a>
+          <span class="screen-reader-text" i18n:translate="site-home">
+            <tal:block i18n:name="siteName"
+                       content="view/siteInfo/name">Site</tal:block>
+            Homepage</span></a>
       </li>
       <li>
         <a class="group"
@@ -51,7 +53,9 @@
         <a href="#"
            tal:attributes="href view/groupInfo/relativeURL">the group page</a>
         and
-        <a href="/">the the <span tal:replace="view/siteInfo/name"/>
+        <a href="/">the
+          <span i18n:name="siteName"
+                tal:replace="view/siteInfo/name"/>
         homepage.</a>
       </p>
       <tal:block define="widgets view/widgets">

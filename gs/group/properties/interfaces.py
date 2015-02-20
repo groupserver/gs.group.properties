@@ -21,28 +21,31 @@ from . import GSMessageFactory as _
 
 class IGroupProperties(Interface):
     title = TextLine(
-        title=_('Group Name'),
-        description=_('The name of the group'),
+        title=_('form-label-group-name', 'Group Name'),
+        description=_('form-label-group-name-help',
+                      'The name of the group'),
         required=True)
 
     description = TextLine(
-        title=_('Short Description'),
-        description=_('Who and what the online group is for. Shown on the '
+        title=_('form-label-description', 'Short Description'),
+        description=_('form-label-description-help',
+                      'Who and what the online group is for. Shown on the '
                       'Groups page and the Group Home Page.'),
         required=False)
 
     short_name = TextLine(
-        title=_('Subject Line Prefix'),
-        description=_('Shown in the subject line of posts delivered via '
+        title=_('form-label-subject-line-prefix', 'Subject Line Prefix'),
+        description=_('form-label-subject-line-prefix-help',
+                      'Shown in the subject line of posts delivered via '
                       'email.'),
         required=True)
 
     mshipCriterion = TextLine(
-        title=_('Membership Criterion ? '
-                'displayed only when the group\'s privacy setting '
-                'is "private" or "secret".'),
-        description=_('Who is eligible to join the group in '
-                      'the future?'),
+        title=_('form-label-membership-criterion', 'Membership Criterion'),
+        description=_('form-label-membership-criterion-help',
+                      "Who is eligible to join the group in the future. "
+                      "Displayed only when the group's privacy setting is "
+                      '"private" or "secret".'),
         required=False)
 
 
