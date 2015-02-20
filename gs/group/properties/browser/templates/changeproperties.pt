@@ -50,9 +50,7 @@
         line of all group emails, and (in private and secret groups)
         define the criteria for joining.
         These group properties are displayed in places such as
-        <a href="#"
-           tal:attributes="href view/groupInfo/relativeURL">the group page</a>
-        and
+        the group page and
         <a href="/">the
           <span i18n:name="siteName"
                 tal:replace="view/siteInfo/name"/>

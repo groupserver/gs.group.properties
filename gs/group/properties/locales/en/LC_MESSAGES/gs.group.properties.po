@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-02-20 00:26+0000\n"
+"POT-Creation-Date: 2015-02-20 00:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,10 +19,11 @@ msgstr ""
 msgid "change-button"
 msgstr "Change"
 
-#. Default: "Here you can state the name and description of this group, set a shortened version of the name to appear in the subject line of all group emails, and (in private and secret groups) define the criteria for joining. These group properties are displayed in places such as <a href=\"${DYNAMIC_CONTENT}\">the group page</a> and <a href=\"/\">the ${siteName} homepage.</a>"
-#: ./browser/templates/changeproperties.pt:57
+#. Default: "Here you can state the name and description of this group, set a shortened version of the name to appear in the subject line of all group emails, and (in private and secret groups) define the criteria for joining. These group properties are displayed in places such as the group page and <a href=\"/\">the ${siteName} homepage.</a>"
+#: ./browser/templates/changeproperties.pt:55
+#, fuzzy
 msgid "change-intro"
-msgstr "Here you can state the name and description of this group, set a shortened version of the name to appear in the subject line of all group emails, and (in private and secret groups) define the criteria for joining. These group properties are displayed in places such as <a href=\"${DYNAMIC_CONTENT}\">the group page</a> and <a href=\"/\">the ${siteName} homepage.</a>"
+msgstr "Here you can state the name and description of this group, set a shortened version of the name to appear in the subject line of all group emails, and (in private and secret groups) define the criteria for joining. These group properties are displayed in places such as the group page and <a href=\"/\">the ${siteName} homepage."
 
 #. Default: "Change group properties"
 #: ./change.py:36

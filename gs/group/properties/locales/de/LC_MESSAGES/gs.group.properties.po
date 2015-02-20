@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gs.group.properties\n"
-"POT-Creation-Date: 2015-02-20 00:26+0000\n"
-"PO-Revision-Date: 2015-02-20 00:30+0000\n"
+"POT-Creation-Date: 2015-02-20 00:49+0000\n"
+"PO-Revision-Date: 2015-02-20 00:54+0000\n"
 "Last-Translator: Michael JasonSmith <mpj17@onlinegroups.net>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/gs-group-properties/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -25,10 +25,9 @@ msgstr ""
 #. Default: "Here you can state the name and description of this group, set a
 #. shortened version of the name to appear in the subject line of all group
 #. emails, and (in private and secret groups) define the criteria for joining.
-#. These group properties are displayed in places such as <a
-#. href=\"${DYNAMIC_CONTENT}\">the group page</a> and <a href=\"/\">the
-#. ${siteName} homepage.</a>"
-#: ./browser/templates/changeproperties.pt:57
+#. These group properties are displayed in places such as the group page and
+#. <a href=\"/\">the ${siteName} homepage.</a>"
+#: ./browser/templates/changeproperties.pt:55
 msgid "change-intro"
 msgstr ""
 
