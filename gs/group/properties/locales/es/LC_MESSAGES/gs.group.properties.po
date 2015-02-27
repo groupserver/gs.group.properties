@@ -1,18 +1,17 @@
 # 
 # Translators:
-# Alice Rose <heldinz@posteo.de>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: gs.group.properties\n"
 "POT-Creation-Date: 2015-02-20 00:49+0000\n"
-"PO-Revision-Date: 2015-02-26 16:16+0000\n"
-"Last-Translator: Alice Rose <heldinz@posteo.de>\n"
-"Language-Team: German (http://www.transifex.com/projects/p/gs-group-properties/language/de/)\n"
+"PO-Revision-Date: 2015-02-18 19:51+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Spanish (http://www.transifex.com/projects/p/gs-group-properties/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Domain: DOMAIN\n"
-"Language: de\n"
+"Language: es\n"
 "Language-Code: en\n"
 "Language-Name: English\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -21,7 +20,7 @@ msgstr ""
 #. Default: "Change"
 #: ./change.py:54
 msgid "change-button"
-msgstr "Ändern"
+msgstr ""
 
 #. Default: "Here you can state the name and description of this group, set a
 #. shortened version of the name to appear in the subject line of all group
@@ -45,7 +44,7 @@ msgstr ""
 #. Default: "Short Description"
 #: ./interfaces.py:30
 msgid "form-label-description"
-msgstr "Kurze Beschreibung"
+msgstr ""
 
 #. Default: "Who and what the online group is for. Shown on the Groups page
 #. and the Group Home Page."
@@ -56,12 +55,12 @@ msgstr ""
 #. Default: "Group Name"
 #: ./interfaces.py:24
 msgid "form-label-group-name"
-msgstr "Gruppenname"
+msgstr ""
 
 #. Default: "The name of the group"
 #: ./interfaces.py:25
 msgid "form-label-group-name-help"
-msgstr "Der Name der Gruppe."
+msgstr ""
 
 #. Default: "Membership Criterion"
 #: ./interfaces.py:44
@@ -87,9 +86,9 @@ msgstr ""
 #. Default: "This Group"
 #: ./browser/templates/admin.pt:5
 msgid "group-admin-heading"
-msgstr "Diese Gruppe"
+msgstr ""
 
 #. Default: "${siteName} Homepage"
 #: ./browser/templates/changeproperties.pt:29
 msgid "site-home"
-msgstr "${siteName} Startseite"
+msgstr ""
