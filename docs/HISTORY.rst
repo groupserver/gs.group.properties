@@ -1,10 +1,20 @@
 Changelog
 =========
 
+2.4.1 (2015-02-26)
+------------------
+
+* Adding Transifex_ support
+* Added German (thanks, Alice_)
+
+.. _Transifex:
+   https://www.transifex.com/projects/p/gs-group-properties/
+.. _Alice: http://groupserver.org/p/alice
+
 2.4.0 (2014-10-23)
 ------------------
 
-* Added i18n support
+* Added internationalisation support
 * Fixed `Bug 640<https://redmine.iopen.net/issues/640>`_
 
 2.3.1 (2014-10-10)
@@ -62,3 +72,5 @@ Changelog
 ------------------
 
 * Initial release
+
+..  LocalWords:  Changelog Transifex
