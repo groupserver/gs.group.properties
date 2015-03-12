@@ -1,10 +1,12 @@
 # 
 # Translators:
+# Michael JasonSmith <mpj17@onlinegroups.net>, 2015
+# Razique Mahroua <razique.mahroua@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: gs.group.properties\n"
 "POT-Creation-Date: 2015-02-20 00:49+0000\n"
-"PO-Revision-Date: 2015-02-20 00:54+0000\n"
+"PO-Revision-Date: 2015-03-12 00:32+0000\n"
 "Last-Translator: Michael JasonSmith <mpj17@onlinegroups.net>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/gs-group-properties/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +22,7 @@ msgstr ""
 #. Default: "Change"
 #: ./change.py:54
 msgid "change-button"
-msgstr ""
+msgstr "Changer"
 
 #. Default: "Here you can state the name and description of this group, set a
 #. shortened version of the name to appear in the subject line of all group
@@ -34,61 +36,61 @@ msgstr ""
 #. Default: "Change group properties"
 #: ./change.py:36
 msgid "change-properties-page-title"
-msgstr ""
+msgstr "Mettre à jours les paramètres du groupe"
 
 #. Default: "Changed the properties of ${groupLink}."
 #: ./change.py:62
 msgid "changed-status"
-msgstr ""
+msgstr "Mettre à jour les paramètres du groupe ${groupLink}."
 
 #. Default: "Short Description"
 #: ./interfaces.py:30
 msgid "form-label-description"
-msgstr ""
+msgstr "Courte description"
 
 #. Default: "Who and what the online group is for. Shown on the Groups page
 #. and the Group Home Page."
 #: ./interfaces.py:31
 msgid "form-label-description-help"
-msgstr ""
+msgstr "A qui s'adresse ce groupe, et pourquoi. Affiché sur la page des Groupes, et sur la page d'accueil du groupe."
 
 #. Default: "Group Name"
 #: ./interfaces.py:24
 msgid "form-label-group-name"
-msgstr ""
+msgstr "Nom du groupe"
 
 #. Default: "The name of the group"
 #: ./interfaces.py:25
 msgid "form-label-group-name-help"
-msgstr ""
+msgstr "Le nom du groupe."
 
 #. Default: "Membership Criterion"
 #: ./interfaces.py:44
 msgid "form-label-membership-criterion"
-msgstr ""
+msgstr "Critères d'adhésion"
 
 #. Default: "Who is eligible to join the group in the future. Displayed only
 #. when the group's privacy setting is \"private\" or \"secret\"."
 #: ./interfaces.py:45
 msgid "form-label-membership-criterion-help"
-msgstr ""
+msgstr "Qui est éligible pour l'adhésion du groupe. Sera affiché uniquement lorsque le niveau de confidentialité du groupe sera \"privéé ou \"secret\"."
 
 #. Default: "Subject Line Prefix"
 #: ./interfaces.py:37
 msgid "form-label-subject-line-prefix"
-msgstr ""
+msgstr "Sujet préfixe "
 
 #. Default: "Shown in the subject line of posts delivered via email."
 #: ./interfaces.py:38
 msgid "form-label-subject-line-prefix-help"
-msgstr ""
+msgstr "Affiché dans le sujet des messages envoyés par e-mail."
 
 #. Default: "This Group"
 #: ./browser/templates/admin.pt:5
 msgid "group-admin-heading"
-msgstr ""
+msgstr "Ce groupe"
 
 #. Default: "${siteName} Homepage"
 #: ./browser/templates/changeproperties.pt:29
 msgid "site-home"
-msgstr ""
+msgstr "Page d'accueil du site ${siteName}"
