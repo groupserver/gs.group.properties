@@ -1,6 +1,12 @@
 Changelog
 =========
 
+2.4.3 (2015-03-20)
+------------------
+
+* Closing an anchor-tag in the English translation of the
+  *Properties* page
+
 2.4.2 (2015-03-11)
 ------------------
 
