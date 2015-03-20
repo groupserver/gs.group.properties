@@ -22,8 +22,7 @@
       metal:fill-slot="messages">&#160;</tal:block>
      <ul metal:fill-slot="breadcrumb">
       <li class="site">
-        <a tal:attributes="title string:${view/siteInfo/name} Homepage"
-           href="/" title="Home" class="icon-alone">
+        <a href="/" title="Site homepage" class="icon-alone">
           <span aria-hidden="true" data-icon="&#x2302;"></span>
           <span class="screen-reader-text" i18n:translate="site-home">
             <tal:block i18n:name="siteName"
