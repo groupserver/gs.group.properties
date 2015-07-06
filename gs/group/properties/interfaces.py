@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 ############################################################################
 #
-# Copyright © 2013, 2014 OnlineGroups.net and Contributors.
+# Copyright © 2013, 2014, 2015 OnlineGroups.net and Contributors.
 # All Rights Reserved.
 #
 # This software is subject to the provisions of the Zope Public License,
@@ -14,9 +14,22 @@
 ############################################################################
 from __future__ import absolute_import, unicode_literals
 from zope.interface import Interface
-from zope.schema import TextLine
+from zope.schema import TextLine, Choice
+from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
 from zope.viewlet.interfaces import IViewletManager
 from . import GSMessageFactory as _
+
+
+replyToVocab = SimpleVocabulary([
+    SimpleTerm(
+        'group', 'group',
+        _('Group: replies go to the group.')),
+    SimpleTerm(
+        'sender', 'sender',
+        _('Author: replies just go to the author of the post.')),
+    SimpleTerm(
+        'both', 'both',
+        _('Both: replies go to the group, with an extra email to the author.')), ])
 
 
 class IGroupProperties(Interface):
@@ -39,6 +52,13 @@ class IGroupProperties(Interface):
                       'Shown in the subject line of posts delivered via '
                       'email.'),
         required=True)
+
+    replyTo = Choice(
+        title=_('Reply-to'),
+        description=_('This setting determines the behaviour of the Reply-to email header.'),
+        vocabulary=replyToVocab,
+        required=True,
+        default='group')
 
     mshipCriterion = TextLine(
         title=_('form-label-membership-criterion', 'Membership Criterion'),
