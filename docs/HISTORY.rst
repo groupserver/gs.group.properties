@@ -1,6 +1,13 @@
 Changelog
 =========
 
+2.5.0 (2015-07-07)
+------------------
+
+* Adding the ``Reply-to`` option, closing `Feature 4051`_
+
+.. _Feature 4051: https://redmine.iopen.net/issues/4051
+
 2.4.3 (2015-03-20)
 ------------------
 
