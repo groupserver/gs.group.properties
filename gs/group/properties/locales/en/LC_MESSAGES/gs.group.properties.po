@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-02-20 00:49+0000\n"
-"PO-Revision-Date: 2015-03-20 09:48-0700\n"
+"POT-Creation-Date: 2015-07-06 23:00+0000\n"
+"PO-Revision-Date: 2015-07-06 16:01-0700\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -14,13 +14,17 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
+#: ./interfaces.py:59
+msgid "This setting determines the behaviour of the Reply-to email header."
+msgstr "This setting determines the behaviour of the Reply-to email header."
+
 #. Default: "Change"
-#: ./change.py:54
+#: ./change.py:95
 msgid "change-button"
 msgstr "Change"
 
 #. Default: "Here you can state the name and description of this group, set a shortened version of the name to appear in the subject line of all group emails, and (in private and secret groups) define the criteria for joining. These group properties are displayed in places such as the group page and <a href=\"/\">the ${siteName} homepage.</a>"
-#: ./browser/templates/changeproperties.pt:55
+#: ./browser/templates/changeproperties.pt:54
 msgid "change-intro"
 msgstr "Here you can state the name and description of this group, set a shortened version of the name to appear in the subject line of all group emails, and (in private and secret groups) define the criteria for joining. These group properties are displayed in places such as the group page and <a href=\"/\">the ${siteName} homepage.</a>"
 
@@ -30,47 +34,47 @@ msgid "change-properties-page-title"
 msgstr "Change group properties"
 
 #. Default: "Changed the properties of ${groupLink}."
-#: ./change.py:62
+#: ./change.py:108
 msgid "changed-status"
 msgstr "Changed the properties of ${groupLink}."
 
 #. Default: "Short Description"
-#: ./interfaces.py:30
+#: ./interfaces.py:44
 msgid "form-label-description"
 msgstr "Short description"
 
 #. Default: "Who and what the online group is for. Shown on the Groups page and the Group Home Page."
-#: ./interfaces.py:31
+#: ./interfaces.py:45
 msgid "form-label-description-help"
 msgstr "Who and what the online group is for. Shown on the Groups page and the Group Home Page."
 
 #. Default: "Group Name"
-#: ./interfaces.py:24
+#: ./interfaces.py:38
 msgid "form-label-group-name"
 msgstr "Group name"
 
 #. Default: "The name of the group"
-#: ./interfaces.py:25
+#: ./interfaces.py:39
 msgid "form-label-group-name-help"
 msgstr "The name of the group."
 
 #. Default: "Membership Criterion"
-#: ./interfaces.py:44
+#: ./interfaces.py:65
 msgid "form-label-membership-criterion"
 msgstr "Membership criterion"
 
 #. Default: "Who is eligible to join the group in the future. Displayed only when the group's privacy setting is \"private\" or \"secret\"."
-#: ./interfaces.py:45
+#: ./interfaces.py:66
 msgid "form-label-membership-criterion-help"
 msgstr "Who is eligible to join the group in the future. Displayed only when the group's privacy setting is \"private\" or \"secret\"."
 
 #. Default: "Subject Line Prefix"
-#: ./interfaces.py:37
+#: ./interfaces.py:51
 msgid "form-label-subject-line-prefix"
 msgstr "Subject-line prefix"
 
 #. Default: "Shown in the subject line of posts delivered via email."
-#: ./interfaces.py:38
+#: ./interfaces.py:52
 msgid "form-label-subject-line-prefix-help"
 msgstr "Shown in the subject line of posts delivered via email."
 
@@ -79,8 +83,28 @@ msgstr "Shown in the subject line of posts delivered via email."
 msgid "group-admin-heading"
 msgstr "This group"
 
+#. Default: "Reply-to"
+#: ./interfaces.py:58
+msgid "reply-to"
+msgstr "Email replies go to…"
+
+#. Default: "Both: replies go to the group, with an extra email to the author."
+#: ./interfaces.py:32
+msgid "reply-to-both"
+msgstr "Both: replies go to the group, with an extra email to the author."
+
+#. Default: "Group: replies go to the group."
+#: ./interfaces.py:26
+msgid "reply-to-group"
+msgstr "Group: replies go to the group."
+
+#. Default: "Author: replies just go to the author of the post."
+#: ./interfaces.py:29
+msgid "reply-to-sender"
+msgstr "Author: replies just go to the author of the post."
+
 #. Default: "${siteName} Homepage"
-#: ./browser/templates/changeproperties.pt:29
+#: ./browser/templates/changeproperties.pt:28
 msgid "site-home"
 msgstr "${siteName} Homepage"
 

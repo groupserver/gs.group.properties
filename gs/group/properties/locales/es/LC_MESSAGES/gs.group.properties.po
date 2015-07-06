@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gs.group.properties\n"
-"POT-Creation-Date: 2015-02-20 00:49+0000\n"
-"PO-Revision-Date: 2015-03-20 16:50+0000\n"
+"POT-Creation-Date: 2015-07-06 23:00+0000\n"
+"PO-Revision-Date: 2015-07-06 23:02+0000\n"
 "Last-Translator: Michael JasonSmith <mpj17@onlinegroups.net>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/gs-group-properties/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -17,8 +17,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Preferred-Encodings: utf-8 latin1\n"
 
+#: ./interfaces.py:59
+msgid "This setting determines the behaviour of the Reply-to email header."
+msgstr ""
+
 #. Default: "Change"
-#: ./change.py:54
+#: ./change.py:95
 msgid "change-button"
 msgstr ""
 
@@ -27,7 +31,7 @@ msgstr ""
 #. emails, and (in private and secret groups) define the criteria for joining.
 #. These group properties are displayed in places such as the group page and
 #. <a href=\"/\">the ${siteName} homepage.</a>"
-#: ./browser/templates/changeproperties.pt:55
+#: ./browser/templates/changeproperties.pt:54
 msgid "change-intro"
 msgstr ""
 
@@ -37,49 +41,49 @@ msgid "change-properties-page-title"
 msgstr ""
 
 #. Default: "Changed the properties of ${groupLink}."
-#: ./change.py:62
+#: ./change.py:108
 msgid "changed-status"
 msgstr ""
 
 #. Default: "Short Description"
-#: ./interfaces.py:30
+#: ./interfaces.py:44
 msgid "form-label-description"
 msgstr ""
 
 #. Default: "Who and what the online group is for. Shown on the Groups page
 #. and the Group Home Page."
-#: ./interfaces.py:31
+#: ./interfaces.py:45
 msgid "form-label-description-help"
 msgstr ""
 
 #. Default: "Group Name"
-#: ./interfaces.py:24
+#: ./interfaces.py:38
 msgid "form-label-group-name"
 msgstr ""
 
 #. Default: "The name of the group"
-#: ./interfaces.py:25
+#: ./interfaces.py:39
 msgid "form-label-group-name-help"
 msgstr ""
 
 #. Default: "Membership Criterion"
-#: ./interfaces.py:44
+#: ./interfaces.py:65
 msgid "form-label-membership-criterion"
 msgstr ""
 
 #. Default: "Who is eligible to join the group in the future. Displayed only
 #. when the group's privacy setting is \"private\" or \"secret\"."
-#: ./interfaces.py:45
+#: ./interfaces.py:66
 msgid "form-label-membership-criterion-help"
 msgstr ""
 
 #. Default: "Subject Line Prefix"
-#: ./interfaces.py:37
+#: ./interfaces.py:51
 msgid "form-label-subject-line-prefix"
 msgstr ""
 
 #. Default: "Shown in the subject line of posts delivered via email."
-#: ./interfaces.py:38
+#: ./interfaces.py:52
 msgid "form-label-subject-line-prefix-help"
 msgstr ""
 
@@ -88,7 +92,28 @@ msgstr ""
 msgid "group-admin-heading"
 msgstr ""
 
+#. Default: "Reply-to"
+#: ./interfaces.py:58
+msgid "reply-to"
+msgstr ""
+
+#. Default: "Both: replies go to the group, with an extra email to the
+#. author."
+#: ./interfaces.py:32
+msgid "reply-to-both"
+msgstr ""
+
+#. Default: "Group: replies go to the group."
+#: ./interfaces.py:26
+msgid "reply-to-group"
+msgstr ""
+
+#. Default: "Author: replies just go to the author of the post."
+#: ./interfaces.py:29
+msgid "reply-to-sender"
+msgstr ""
+
 #. Default: "${siteName} Homepage"
-#: ./browser/templates/changeproperties.pt:29
+#: ./browser/templates/changeproperties.pt:28
 msgid "site-home"
 msgstr ""

@@ -23,13 +23,14 @@ from . import GSMessageFactory as _
 replyToVocab = SimpleVocabulary([
     SimpleTerm(
         'group', 'group',
-        _('Group: replies go to the group.')),
+        _('reply-to-group', 'Group: replies go to the group.')),
     SimpleTerm(
         'sender', 'sender',
-        _('Author: replies just go to the author of the post.')),
+        _('reply-to-sender', 'Author: replies just go to the author of the post.')),
     SimpleTerm(
         'both', 'both',
-        _('Both: replies go to the group, with an extra email to the author.')), ])
+        _('reply-to-both',
+          'Both: replies go to the group, with an extra email to the author.')), ])
 
 
 class IGroupProperties(Interface):
@@ -54,7 +55,7 @@ class IGroupProperties(Interface):
         required=True)
 
     replyTo = Choice(
-        title=_('Reply-to'),
+        title=_('reply-to', 'Reply-to'),
         description=_('This setting determines the behaviour of the Reply-to email header.'),
         vocabulary=replyToVocab,
         required=True,
