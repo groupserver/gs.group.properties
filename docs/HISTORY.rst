@@ -1,6 +1,16 @@
 Changelog
 =========
 
+2.5.1 (2016-01-11)
+------------------
+
+* [DE] Further updates to the German translation, thanks to
+  Cousin Clara, and `Stephan G. Blendinger`_
+
+.. _Stephan G. Blendinger:
+   https://www.transifex.com/user/profile/stephanblendinger/
+
+
 2.5.0 (2015-07-07)
 ------------------
 
