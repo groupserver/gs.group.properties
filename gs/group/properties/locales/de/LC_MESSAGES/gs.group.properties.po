@@ -1,13 +1,14 @@
 # 
 # Translators:
 # Alice Rose <heldinz@posteo.de>, 2015
+# Clara Adele von Randow <cvrandow@freenet.de>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: gs.group.properties\n"
 "POT-Creation-Date: 2015-07-06 23:00+0000\n"
-"PO-Revision-Date: 2015-07-06 23:02+0000\n"
-"Last-Translator: Michael JasonSmith <mpj17@onlinegroups.net>\n"
-"Language-Team: German (http://www.transifex.com/projects/p/gs-group-properties/language/de/)\n"
+"PO-Revision-Date: 2016-01-08 19:32+0000\n"
+"Last-Translator: Clara Adele von Randow <cvrandow@freenet.de>\n"
+"Language-Team: German (http://www.transifex.com/groupserver/gs-group-properties/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,7 +21,7 @@ msgstr ""
 
 #: ./interfaces.py:59
 msgid "This setting determines the behaviour of the Reply-to email header."
-msgstr ""
+msgstr "Diese Einstellung entscheidet die Art der Kopfzeile der Rückmail."
 
 #. Default: "Change"
 #: ./change.py:95
@@ -34,17 +35,17 @@ msgstr "Ändern"
 #. <a href=\"/\">the ${siteName} homepage.</a>"
 #: ./browser/templates/changeproperties.pt:54
 msgid "change-intro"
-msgstr ""
+msgstr "Hier können Sie den Namen und die Beschreibung dieser Gruppe angeben. Stellen Sie es so ein, dass ein Kürzel des Namens in der Betreffzeile aller Gruppen-E-Mails erscheint und definieren Sie die Kriterien um beizutreten (für private und geheime Gruppen). Die Eigenschaften dieser Gruppe werden unter anderem auf der Gruppenseite und <a href=\"/\"> der ${siteName} Homepage </a> angezeigt."
 
 #. Default: "Change group properties"
 #: ./change.py:36
 msgid "change-properties-page-title"
-msgstr ""
+msgstr "Eigenschaften der Gruppe ändern"
 
 #. Default: "Changed the properties of ${groupLink}."
 #: ./change.py:108
 msgid "changed-status"
-msgstr ""
+msgstr "Eigenschaften der Gruppe ${groupLink} wurden geändert."
 
 #. Default: "Short Description"
 #: ./interfaces.py:44
@@ -55,7 +56,7 @@ msgstr "Kurze Beschreibung"
 #. and the Group Home Page."
 #: ./interfaces.py:45
 msgid "form-label-description-help"
-msgstr ""
+msgstr "Für wen und was die online Gruppe gedacht ist. Wird auf der Gruppenseite und der Homepage der Gruppe angezeigt."
 
 #. Default: "Group Name"
 #: ./interfaces.py:38
@@ -70,23 +71,23 @@ msgstr "Der Name der Gruppe."
 #. Default: "Membership Criterion"
 #: ./interfaces.py:65
 msgid "form-label-membership-criterion"
-msgstr ""
+msgstr "Kriterium für Mitgliedschaft"
 
 #. Default: "Who is eligible to join the group in the future. Displayed only
 #. when the group's privacy setting is \"private\" or \"secret\"."
 #: ./interfaces.py:66
 msgid "form-label-membership-criterion-help"
-msgstr ""
+msgstr "Wer berechtigt ist um der Gruppe in Zukunft beizutreten. Wird nur angezeigt, wenn die Einstellung der Privatsphäre der Gruppe auf \"privat\" oder \"geheim\" gestellt ist."
 
 #. Default: "Subject Line Prefix"
 #: ./interfaces.py:51
 msgid "form-label-subject-line-prefix"
-msgstr ""
+msgstr "Kürzel der Betreffzeile"
 
 #. Default: "Shown in the subject line of posts delivered via email."
 #: ./interfaces.py:52
 msgid "form-label-subject-line-prefix-help"
-msgstr ""
+msgstr "Sichtbar in der Betreffzeile der Beiträge, die per E-Mail hinterlassen werden."
 
 #. Default: "This Group"
 #: ./browser/templates/admin.pt:5
@@ -96,23 +97,23 @@ msgstr "Diese Gruppe"
 #. Default: "Reply-to"
 #: ./interfaces.py:58
 msgid "reply-to"
-msgstr ""
+msgstr "Rückmails gehen an..."
 
 #. Default: "Both: replies go to the group, with an extra email to the
 #. author."
 #: ./interfaces.py:32
 msgid "reply-to-both"
-msgstr ""
+msgstr "Beides: Rückmails gehen an die Gruppe mit einer zusätzlichen E-Mail an den Author."
 
 #. Default: "Group: replies go to the group."
 #: ./interfaces.py:26
 msgid "reply-to-group"
-msgstr ""
+msgstr "Gruppe: Rückmails gehen an die Gruppe."
 
 #. Default: "Author: replies just go to the author of the post."
 #: ./interfaces.py:29
 msgid "reply-to-sender"
-msgstr ""
+msgstr "Author: Rückmails gehen nur an den Author des Beitrags."
 
 #. Default: "${siteName} Homepage"
 #: ./browser/templates/changeproperties.pt:28
