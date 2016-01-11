@@ -58,6 +58,9 @@ class ChangePropertiesForm(GroupForm):
     @property
     def replyTo(self):
         'The reply-to property for a group'
+        # --=mpj17=-- All this replyTo property stuff is great,
+        # but it really needs to be moved to gs.group.list.base
+        # at some stage.
         r = self.mailingList.get_property(b'replyto', self.defaultReplyTo)
         retval = 'group' if r is None else r
         retval = 'group' if retval == 'list' else retval  # For old GS installs
